@@ -26,6 +26,15 @@ form.addEventListener("submit", function(event) {
   var lastNameValue = lastNameInput.value;
   console.log(firstNameValue, lastNameValue);
 
+  var p = document.createElement("p");
+  p.innerHTML = firstNameValue + " " + lastNameValue;
+
+  var userContainer = document.querySelector(".user-container");
+
+  userContainer.appendChild(p);
+
+
+  console.log(p);
 
 });
 
